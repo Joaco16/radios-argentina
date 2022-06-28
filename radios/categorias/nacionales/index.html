@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/categorias/styleplayer.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://kit.fontawesome.com/8be822d44f.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,500&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+  <!-- <header class="header content">
+    <div class="header-video">
+      <video src="/videos/compressors.mp4" autoplay muted loop></video>
+    </div>
+    <div class="header-overlay"></div>
+    <div class="header-content">
+      <h1>ARG En Vivo</h1>
+      <p>¡En esta pagina web podrás escuchar todas las radios del país!</p>
+      <i class="fa-solid fa-chevron-down btnscroll"></i>
+    </div>
+  </header> -->
+
+  <p class="title">Radios Nacionales</p>
+  <div class="grid-container">
+    <div class="grid-item" id="lacien" style="background-image: url('/logos/lacien.png')" onclick="lacien()"></div>
+    <div class="grid-item" id="los40" style="background-image: url('/logos/los40.png');" onclick="top40()"></div>
+    <div class="grid-item" id="radiodisney" style="background-image: url('https://lumiere-a.akamaihd.net/v1/images/rdregional1200x1200_11845848.png?region=0%2C0%2C1200%2C1200');" onclick="radiodisney()"></div>
+    <div class="grid-item" id="radiodiez" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Radio_10_AM_710_%282020%29.png/1200px-Radio_10_AM_710_%282020%29.png');" onclick="radiodiez()"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/id/534/900/900.jpg');"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/id/664/900/900.jpg');"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/id/176/900/900.jpg');"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/id/73/900/900.jpg')"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/id/806/900/900.jpg');"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/id/535/900/900.jpg');"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/id/943/900/900.jpg');"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/id/733/900/900.jpg');"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/id/584/900/900.jpg');"></div>
+    <div class="grid-item" style="background-image: url('https://picsum.photos/id/844/900/900.jpg');"></div>
+  </div>
+    <div class="radioPlayer noVisible" id="radioPlayerId">
+      <img id="radiosImg" src="">
+      <p id="radioName">Cargando...</p>
+      <p id="radioTitle">Cargando...</p>
+      <i class="fa-regular fa-circle-play" id="playPause"></i>
+      <i class="fa-solid fa-volume-high" id="radioVolume"></i>
+    </div>
+
+<script src="/radios.js"></script>
+<script src="/categorias/radioPlayer.js"></script>
+</body>
+
+</html>
+
