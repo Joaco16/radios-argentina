@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Cien - ARGEnVivo</title>
+  <link rel="stylesheet" href="/categorias/styleradios.css">
+
+</head>
+
+<body>
+
+  <div class="content-radio">
+    <h1 class="title">La Cien</h1>
+
+
+    <div class="player">
+      <div id="info" class="info">
+        <span class="artist">La Cien</span>
+      </div>
+      <div id="control-panel" class="control-panel">
+        <div class="album-art">
+          <img src="/logos/lacien.png" alt="">
+        </div>
+        <div class="controls">
+          <div class="play" id="play"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="nowPlaying">
+      <div class="centrarHorizontal">
+        <div class="nowPlayinginfo">
+          <p>Estás escuchando:<span id="responseTitle">...</span></p>
+          <p>Horario:<span id="responseSchedule">...</span></p>
+        </div>        
+        <div class="nextPlaying">
+          <p>Siguiente:</p>
+          <p>Estás escuchando:<span id="responseTitle">...</span></p>
+          <p>Horario:<span id="responseSchedule">...</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="radio-info">
+      <img src="/logos/lacien.png" alt="Logo de la radio">
+      <p>
+        La radio transmite desde la ciudad de Buenos Aires, Argentina en la frecuencia modular 99.9 FM y cuenta
+        actualmente con más de 70 repetidoras.
+        En Argentina La 100 es una emisora líder en audiencia, ya que diariamente la sintonizan más de un millón de
+        personas en Capital Federal y en el Gran Buenos Aires. Su eslogan actual es “99.9 y Vos... La 100”. El público
+        de esta estación es muy variado, de hecho, actualmente están disponibles tres opciones de radios derivadas de La
+        100, según los gustos musicales de cada audiencia. La 100 2 se especializada en rock nacional argentino, La 100
+        3 transmite los hits y La 100 4 está dedicada a los clásicos de todos los tiempos. A lo largo de sus años de
+        existencia, La 100 ha mantenido un compromiso con su contenido y con la comunidad, la ecología y el arte, lo que
+        le ha valido varios reconocimientos de distintas instituciones.</p>
+        <div class="social-btn">
+          
+        </div>
+      </div>
+
+
+
+
+      <audio id="Music" controls style="display: none;">
+        <source src="" type="audio/mpeg">
+      </audio>
+
+
+
+      <script src="https://cdn.jsdelivr.net/hls.js/latest/hls.min.js"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+      <script type="module" src="lacien.js"></script>
+      <script type="module" src="titulo.js"></script>
+
+</body>
+
+</html>
